@@ -7,10 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Links() {
   const linkWrapper = useRef<HTMLDivElement>(null);
-  const { contextSafe } = useGSAP({ scope: linkWrapper });
-  const onHoverPlaylist = contextSafe(() => {
-    gsap.to(".playinit", { scale: 1.2 });
-  });
+  // const { contextSafe } = useGSAP({ scope: linkWrapper });
+  // const onHoverPlaylist = contextSafe(() => {
+  //   gsap.to(".playinit", { scale: 1.2 });
+  // });
   useGSAP(
     () => {
       const timeline = gsap.timeline({
