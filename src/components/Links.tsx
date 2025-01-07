@@ -18,7 +18,7 @@ function Links() {
           trigger: linkWrapper.current,
           start: "10% 66%",
           end: "+=60%",
-          markers: true,
+          markers: false,
         },
       });
       // text.addEventListener("mouseenter", () => animation.play());
