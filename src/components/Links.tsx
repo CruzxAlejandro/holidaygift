@@ -17,16 +17,15 @@ function Links() {
         scrollTrigger: {
           trigger: linkWrapper.current,
           start: "10% 66%",
-          end: "+=60%",
+          // end: "+=60%",
           markers: false,
         },
       });
-      // text.addEventListener("mouseenter", () => animation.play());
-      //text.addEventListener("mouseleave", () => animation.reverse())
-      timeline.from(".playinit", {
-        opacity: 0,
+      timeline.to(".playinit", {
+        opacity: 1,
         ease: "sine",
         stagger: 0.5,
+        immediateRender: false,
       });
     },
     { scope: linkWrapper }
