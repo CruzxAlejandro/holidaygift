@@ -5,8 +5,8 @@ import Loader from "./components/Loader.tsx";
 function App() {
   return (
     <>
-      <Loader />
-      <Hero />
+      {/* <Loader />
+      <Hero /> */}
       <Links />
     </>
   );
