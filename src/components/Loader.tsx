@@ -8,9 +8,9 @@ function Loader() {
   const bottomText = useRef<HTMLSpanElement>(null);
   const loader = useRef<HTMLDivElement>(null);
   useGSAP(() => {
-    gsap.set(document.body, {
-      overflow: "hidden",
-    });
+    // gsap.set(document.body, {
+    //   overflow: "hidden",
+    // });
     const tl = gsap.timeline({});
     tl.from([topText.current, bottomText.current], {
       opacity: 0,
@@ -33,12 +33,12 @@ function Loader() {
       duration: 1,
       ease: "sine",
       delay: "-=2",
-      onComplete: () => {
-        gsap.set(document.body, {
-          overflow: "auto",
-          ease: "sine",
-        });
-      },
+      // onComplete: () => {
+      //   gsap.set(document.body, {
+      //     overflow: "auto",
+      //     ease: "sine",
+      //   });
+      // },
     });
   }, []);
 
@@ -46,7 +46,7 @@ function Loader() {
     <>
       {/* Loader wrap */}
       <div
-        className="h-screen w-full flex items-end p-8 bg-[#F7EFDF] absolute justify-between"
+        className="h-full w-full flex items-end p-8 bg-[#F7EFDF] absolute justify-between"
         ref={loader}
       >
         {/* Text on bottom left */}

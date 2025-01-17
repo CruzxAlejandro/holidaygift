@@ -9,35 +9,35 @@ function Hero() {
           <div className="grid grid-cols-5 gap-0">
             <div className="drawbox">
               <img
-                src="images/Chill_tile_16.png"
+                src="/holidaygift/images/Chill_tile_16.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_15.png"
+                src="holidaygift/images/Chill_tile_15.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_14.png"
+                src="/holidaygift/images/Chill_tile_14.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_13.png"
+                src="/holidaygift/images/Chill_tile_13.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_12.png"
+                src="/holidaygift/images/Chill_tile_12.png"
                 alt=""
                 className="object-fill"
               />
@@ -49,21 +49,21 @@ function Hero() {
             <div className="col-span-5 lg:col-span-1 grid grid-cols-5 lg:grid-rows-3 lg:grid-cols-none gap-0">
               <div className="drawbox order-3">
                 <img
-                  src="images/Chill_tile_10.png"
+                  src="/holidaygift/images/Chill_tile_10.png"
                   alt=""
                   className="object-fill"
                 />
               </div>
               <div className="drawbox">
                 <img
-                  src="images/Chill_tile_9.png"
+                  src="/holidaygift/images/Chill_tile_9.png"
                   alt=""
                   className="object-fill"
                 />
               </div>
               <div className="drawbox">
                 <img
-                  src="images/Chill_tile_8.png"
+                  src="/holidaygift/images/Chill_tile_8.png"
                   alt=""
                   className="object-fill"
                 />
@@ -83,7 +83,7 @@ function Hero() {
                 </p>
               </div>
               {/* <img
-                src="images/Center_tile.jpg"
+                src="/holidaygift/images/Center_tile.jpg"
                 alt=""
                 className="object-fill h-full"
               /> */}
@@ -92,21 +92,21 @@ function Hero() {
             <div className="col-span-5 lg:col-span-1 grid grid-cols-5 lg:grid-rows-3 lg:grid-cols-none gap-0">
               <div className="drawbox">
                 <img
-                  src="images/Chill_tile_11.png"
+                  src="/holidaygift/images/Chill_tile_11.png"
                   alt=""
                   className="object-fill"
                 />
               </div>
               <div className="drawbox">
                 <img
-                  src="images/Chill_tile_1.png"
+                  src="/holidaygift/images/Chill_tile_1.png"
                   alt=""
                   className="object-fill"
                 />
               </div>
               <div className="drawbox">
                 <img
-                  src="images/Chill_tile_2.png"
+                  src="/holidaygift/images/Chill_tile_2.png"
                   alt=""
                   className="object-fill"
                 />
@@ -118,35 +118,35 @@ function Hero() {
           <div className="grid grid-cols-5 gap-0">
             <div className="drawbox">
               <img
-                src="images/Chill_tile_7.png"
+                src="/holidaygift/images/Chill_tile_7.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_6.png"
+                src="/holidaygift/images/Chill_tile_6.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_5.png"
+                src="/holidaygift/images/Chill_tile_5.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_4.png"
+                src="/holidaygift/images/Chill_tile_4.png"
                 alt=""
                 className="object-fill"
               />
             </div>
             <div className="drawbox">
               <img
-                src="images/Chill_tile_3.png"
+                src="/holidaygift/images/Chill_tile_3.png"
                 alt=""
                 className="object-fill"
               />
