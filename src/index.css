@@ -7,20 +7,47 @@
     background-color: #f7efdf;
     color: #fff;
   }
+
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 700;
+    src: url(./fonts/Sentinel-Bold.woff) format("woff");
+  }
+  @font-face {
+    font-family: Sentinel;
+    font-weight: 500;
+    src: url(./fonts/Sentinel-Medium.woff) format("woff");
+  }
 }
 
 @layer components {
   h1 {
-    @apply text-4xl lg:text-6xl mb-10 text-[#000000];
-    /* font-family: "Sentinel", serif; */
-    font-weight: 400;
+    @apply text-4xl lg:text-7xl text-[#000000];
+    font-family: "Sentinel", serif;
+    font-weight: 700;
   }
 
   h2 {
-    @apply text-4xl lg:text-6xl mb-10 text-dh-blue;
+    @apply text-3xl md:text-4xl mb-4;
+    font-family: "Sentinel", serif;
+    font-weight: 700;
+  }
+
+  h3 {
+    @apply text-2xl mb-1;
+    font-family: "Sentinel", serif;
+    font-weight: 700;
+  }
+
+  h4 {
+    @apply text-xl mb-1;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
   }
 
   p {
-    @apply text-base mb-5 text-[#fff];
+    @apply text-lg mb-5 text-[#fff] mt-5;
+    font-family: "Sentinel", serif;
+    font-weight: 500;
   }
 }
