@@ -101,24 +101,30 @@ function Popup({
             </svg>
           </button>
         </div>
-        <div className="contentWrap lg:flex w-full">
+        <div className="contentWrap md:flex w-full">
           <div className="contentImage w-1/2 p-10 text-center">
             <img src={image} alt="" />
           </div>
-          <div className="contentCopy w-full lg:w-1/2 p-10">
+          <div className="contentCopy w-full md:w-1/2 p-10">
             <h2 className="text-[#283C4D]">{title}</h2>
             <h3 className="text-[#964730]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
-            <p className="text-[#000]">{content}</p>
+            <p className="text-[#000] mt-5">{content}</p>
             <div className="links flex justify-around w-full text-dh-black">
-              <div className="apple">
-                <a href={linkOne}>Apple Music</a>
+              <div className="apple max-w-32">
+                <a href={linkOne} target="_blank">
+                  <img src="holidaygift/images/apple music_button.png" />
+                </a>
               </div>
-              <div className="utube">
-                <a href={linkTwo}>YouTube</a>
+              <div className="utube max-w-32">
+                <a href={linkTwo} target="_blank">
+                  <img src="holidaygift/images/Youtube_button.png" />
+                </a>
               </div>
-              <div className="spotify">
-                <a href={linkThree}>Spotify</a>
+              <div className="spotify max-w-32">
+                <a href={linkThree} target="_blank">
+                  <img src="holidaygift/images/spotify_button.png" />
+                </a>
               </div>
             </div>
           </div>

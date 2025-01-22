@@ -22,7 +22,7 @@
 
 @layer components {
   h1 {
-    @apply text-4xl lg:text-7xl text-[#000000];
+    @apply text-4xl lg:text-6xl text-[#000000];
     font-family: "Sentinel", serif;
     font-weight: 700;
   }
@@ -46,7 +46,7 @@
   }
 
   p {
-    @apply text-lg mb-5 text-[#fff] mt-5;
+    @apply text-base mb-5 text-[#0F2E24];
     font-family: "Sentinel", serif;
     font-weight: 500;
   }
