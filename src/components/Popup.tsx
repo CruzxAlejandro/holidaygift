@@ -73,7 +73,7 @@ function Popup({
   return (
     <>
       <div
-        className="playlistOpen h-full w-full absolute z-50 p-10 bg-[#F7EFDF]"
+        className="playlistOpen h-full w-full absolute z-50 p-4 md:p-10 bg-[#F7EFDF]"
         ref={pop}
       >
         <div className="topbar text-right">
@@ -101,27 +101,27 @@ function Popup({
             </svg>
           </button>
         </div>
-        <div className="contentWrap md:flex w-full">
-          <div className="contentImage w-1/2 p-10 text-center">
+        <div className="contentWrap flex flex-col md:flex-row w-full items-center">
+          <div className="contentImage w-4/6 md:w-1/2 p-4 md:p-10 text-center">
             <img src={image} alt="" />
           </div>
-          <div className="contentCopy w-full md:w-1/2 p-10">
+          <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
             <h2 className="text-[#283C4D]">{title}</h2>
             <h3 className="text-[#964730]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
             <p className="text-[#000] mt-5">{content}</p>
-            <div className="links flex justify-around w-full text-dh-black">
-              <div className="apple max-w-32">
+            <div className="links flex justify-between md:justify-around w-full text-dh-black">
+              <div className="apple max-w-16 md:max-w-32">
                 <a href={linkOne} target="_blank">
                   <img src="holidaygift/images/apple music_button.png" />
                 </a>
               </div>
-              <div className="utube max-w-32">
+              <div className="utube max-w-16 md:max-w-32">
                 <a href={linkTwo} target="_blank">
                   <img src="holidaygift/images/Youtube_button.png" />
                 </a>
               </div>
-              <div className="spotify max-w-32">
+              <div className="spotify max-w-16 md:max-w-32">
                 <a href={linkThree} target="_blank">
                   <img src="holidaygift/images/spotify_button.png" />
                 </a>

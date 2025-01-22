@@ -129,7 +129,7 @@ function Links() {
             sub="When you’re in a contemplative mood"
             genre="R&B, Indie, etc."
             content="Whether you’re a regular on the ski hills or you only head out into the cold to shovel the front walk, this collection of songs will keep your spirits high, even when it’s freezing. Hit play on this one, and the songs will follow you from the base of the hill to the top (and back down again), or from the house to the car and back home again. Bundle up, head out, and let this playlist enhance your snowy adventures. Cold? What cold?"
-            image="/holidaygift/images/HibernationModeTile.jpg"
+            image="/holidaygift/images/DinnerPartyTile.jpg"
             linkOne="https://youtube.com/playlist?list=PLIs6Kb_-sdWLYIrSTUMg2yATAngDvzS0u&si=KI9rwnJ9alXGT4Cy"
             linkTwo="https://open.spotify.com/playlist/47dh5nRqh4MLF9MyaXG4Xw?si=HioXJT6WTXGwlLnZadlDDw"
             linkThree="https://open.spotify.com/playlist/47dh5nRqh4MLF9MyaXG4Xw?si=HioXJT6WTXGwlLnZadlDDw"

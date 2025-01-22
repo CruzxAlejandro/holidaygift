@@ -28,19 +28,19 @@
   }
 
   h2 {
-    @apply text-3xl md:text-4xl mb-4;
+    @apply text-3xl md:text-4xl mb-2 md:mb-4;
     font-family: "Sentinel", serif;
     font-weight: 700;
   }
 
   h3 {
-    @apply text-2xl mb-1;
+    @apply text-xl md:text-2xl mb-1;
     font-family: "Sentinel", serif;
     font-weight: 700;
   }
 
   h4 {
-    @apply text-xl mb-1;
+    @apply text-lg md:text-xl mb-1;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
   }
