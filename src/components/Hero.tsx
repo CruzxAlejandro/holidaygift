@@ -1,15 +1,126 @@
 import RandomImage from "./RandomImage.tsx";
 
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
+import { useRef, useState, useEffect } from "react";
+
 function Hero() {
+  const grid = useRef<HTMLDivElement>(null);
+
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 972);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 972);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({});
+      tl.from(".heroTitle, .heroText", {
+        y: 50,
+        opacity: 0,
+        duration: 0.75,
+        stagger: 0.5,
+        delay: 1,
+        ease: "sine",
+      });
+      tl.from(".heroSquare", {
+        opacity: 0,
+        duration: 0.75,
+        stagger: {
+          amount: 0.5,
+          from: "random",
+        },
+      });
+      // tl.from(".heroText", {
+      //   y: 50,
+      //   opacity: 0,
+      //   duration: 0.5,
+      //   ease: "sine",
+      // });
+    },
+    { scope: grid }
+  );
+
   return (
     <>
-      <div className="hero w-full h-screen relative">
-        <div className="gridWrapper grid grid-cols-8 grid-rows-6 overflow-hidden absolute">
-          {Array.from({ length: 48 }, (_, index) => (
-            <div key={index}>
-              <RandomImage />
+      <div className="hero w-full">
+        <div>
+          {isDesktop ? (
+            <div
+              className="gridWrapper grid grid-cols-7 md:grid-cols-8 md:grid-rows-5"
+              ref={grid}
+            >
+              {Array.from({ length: 25 }, (_, index) => (
+                <div key={index} className="bg-[#f7efdf]">
+                  <RandomImage className="object-fill heroSquare" />
+                </div>
+              ))}
+              <div className="row-start-2 col-span-7 md:col-start-1 md:row-start-1 lg:col-start-1 lg:row-start-2 md:col-span-3 md:row-span-1 lg:col-span-3 lg:row-span-2 my-auto mx-auto heroTitle px-5">
+                <h1 className="text-[#0F2E24]">
+                  We made you
+                  <br />
+                  some playlists.
+                </h1>
+              </div>
+              <div className="row-start-3 col-span-7 row-auto md:col-start-5 md:row-start-2 lg:col-start-6 lg:row-start-3 md:col-span-3 md:row-span-4 lg:col-span-3 lg:row-span-3 px-5 lg:px-12 my-auto mx-auto heroText">
+                <p>It’s the beginning of a new year, which can be tough.</p>
+                <p>
+                  It’s getting colder. It gets dark at 4 p.m. You’re trying to
+                  meet all your resolutions while recovering from the rush of
+                  the holidays.
+                </p>
+                <p>We feel it, too.</p>
+                <p>
+                  So we’ve put together some curated playlists that will get you
+                  through the first months of the year, each one specifically
+                  tailored to soundtrack a winter activity or enhance a mood.
+                  These may be digital gifts, but we’ve intentionally crafted
+                  them as if they were handmade — no wrapping paper or shelf
+                  space required.
+                </p>
+                <p>Click the link and turn up the volume.</p>
+              </div>
             </div>
-          ))}
+          ) : (
+            <div className="gridWrapper grid grid-cols-8" ref={grid}>
+              {Array.from({ length: 24 }, (_, index) => (
+                <div key={index} className="bg-[#f7efdf]">
+                  <RandomImage className="object-fill heroSquare" />
+                </div>
+              ))}
+              <div className="row-start-2 col-span-8 heroTitle px-10 py-5">
+                <h1 className="text-[#0F2E24]">
+                  We made you
+                  <br />
+                  some playlists.
+                </h1>
+              </div>
+              <div className="row-start-3 col-span-8 row-auto px-10 py-5 my-auto mx-auto heroText">
+                <p>It’s the beginning of a new year, which can be tough.</p>
+                <p>
+                  It’s getting colder. It gets dark at 4 p.m. You’re trying to
+                  meet all your resolutions while recovering from the rush of
+                  the holidays.
+                </p>
+                <p>We feel it, too.</p>
+                <p>
+                  So we’ve put together some curated playlists that will get you
+                  through the first months of the year, each one specifically
+                  tailored to soundtrack a winter activity or enhance a mood.
+                  These may be digital gifts, but we’ve intentionally crafted
+                  them as if they were handmade — no wrapping paper or shelf
+                  space required.
+                </p>
+                <p>Click the link and turn up the volume.</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>

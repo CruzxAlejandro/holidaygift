@@ -1,11 +1,16 @@
 import "./App.css";
-// import Hero from "./components/Hero.tsx";
+import Hero from "./components/Hero.tsx";
 import Links from "./components/Links.tsx";
 import RandomImage from "./components/RandomImage.tsx";
+import { useEffect } from "react";
+
 function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <Links />
       <div className="footer w-full">
         <div className="footerWrapper flex md:flex-row flex-col">

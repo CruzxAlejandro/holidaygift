@@ -1,6 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 interface PopProps {
   title: string;
@@ -13,6 +13,40 @@ interface PopProps {
   linkThree: string;
   closePopup: () => void;
 }
+
+interface HoverImageProps {
+  defaultSrc: string;
+  hoverSrc: string;
+  className?: string;
+  alt?: string;
+}
+
+const HoverImage: React.FC<HoverImageProps> = ({
+  defaultSrc,
+  hoverSrc,
+  className,
+  alt,
+}) => {
+  const [imageSrc, setImageSrc] = useState<string>(defaultSrc);
+
+  const handleMouseEnter = () => {
+    setImageSrc(hoverSrc);
+  };
+
+  const handleMouseLeave = () => {
+    setImageSrc(defaultSrc);
+  };
+
+  return (
+    <img
+      src={imageSrc}
+      alt={alt}
+      className={className}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    />
+  );
+};
 
 function Popup({
   title,
@@ -44,6 +78,12 @@ function Popup({
         duration: 0.75,
         ease: "sine",
       });
+      tl.from(".music", {
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.25,
+        ease: "sine.out",
+      });
       tl.from(".btn-close", {
         scale: 0.75,
         opacity: 0,
@@ -73,36 +113,28 @@ function Popup({
   return (
     <>
       <div
-        className="playlistOpen h-full w-full absolute z-50 p-4 md:p-10 bg-[#F7EFDF]"
+        className="playlistOpen min-h-screen w-full absolute z-50 p-4 md:p-10 bg-[#F7EFDF]"
         ref={pop}
       >
         <div className="topbar text-right">
           <button
             type="button"
-            className="bg-dh-black relative rounded-md hover:text-white focus:outline-none focus:ring-2 focus:ring-white btn-close"
+            className="relative focus:outline-none focus:ring-2 focus:ring-white btn-close"
             onClick={handleClose}
           >
             <span className="absolute"></span>
             <span className="sr-only">Close</span>
-            <svg
-              className="size-8"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-              data-slot="icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
+            {/* <img src="/holidaygift/images/x_2.png" className="max-w-12" /> */}
+            <HoverImage
+              defaultSrc="/holidaygift/images/X_1.png"
+              hoverSrc="/holidaygift/images/x_2.png"
+              className="max-w-12"
+              alt="Close button"
+            />
           </button>
         </div>
         <div className="contentWrap flex flex-col md:flex-row w-full items-center">
-          <div className="contentImage w-4/6 md:w-1/2 p-4 md:p-10 text-center">
+          <div className="contentImage w-3/5 md:w-1/2 p-4 md:p-10 text-center">
             <img src={image} alt="" />
           </div>
           <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
@@ -111,19 +143,34 @@ function Popup({
             <h4 className="text-[#527F65]">{genre}</h4>
             <p className="text-[#000] mt-5">{content}</p>
             <div className="links flex justify-between md:justify-around w-full text-dh-black">
-              <div className="apple max-w-16 md:max-w-32">
+              <div className="music max-w-16 md:max-w-24">
                 <a href={linkOne} target="_blank">
-                  <img src="holidaygift/images/apple music_button.png" />
+                  <HoverImage
+                    defaultSrc="/holidaygift/images/apple music_button.png"
+                    hoverSrc="/holidaygift/images/AppleMusic.gif"
+                    className=""
+                    alt="Apple music illustration."
+                  />
                 </a>
               </div>
-              <div className="utube max-w-16 md:max-w-32">
+              <div className="music max-w-16 md:max-w-24">
                 <a href={linkTwo} target="_blank">
-                  <img src="holidaygift/images/Youtube_button.png" />
+                  <HoverImage
+                    defaultSrc="/holidaygift/images/Youtube_button.png"
+                    hoverSrc="/holidaygift/images/Youtube.gif"
+                    className=""
+                    alt="Youtube illustration."
+                  />
                 </a>
               </div>
-              <div className="spotify max-w-16 md:max-w-32">
+              <div className="music max-w-16 md:max-w-24">
                 <a href={linkThree} target="_blank">
-                  <img src="holidaygift/images/spotify_button.png" />
+                  <HoverImage
+                    defaultSrc="/holidaygift/images/spotify_button.png"
+                    hoverSrc="/holidaygift/images/Spotify.gif"
+                    className=""
+                    alt="Youtube illustration."
+                  />
                 </a>
               </div>
             </div>

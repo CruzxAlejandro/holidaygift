@@ -5,9 +5,11 @@ export default {
     screens: {
       xs: "540px",
       sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      md: "972px",
+      // md: "768px",
+      // lg: "1024px",
+      lg: "1200px",
+      xl: "1380px",
       xxl: "1536px",
     },
     colors: {

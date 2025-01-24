@@ -1,4 +1,8 @@
-function RandomImage() {
+interface RandomImageProps {
+  className?: string;
+}
+
+function RandomImage({ className }: RandomImageProps) {
   function getRandomInt(min: number, max: number): number {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -19,7 +23,12 @@ function RandomImage() {
   }
   return (
     <>
-      <img src={randomImage()} alt={randomImage()} />
+      <img
+        className={className}
+        loading="lazy"
+        src={randomImage()}
+        alt={randomImage()}
+      />
     </>
   );
 }

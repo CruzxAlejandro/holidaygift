@@ -68,21 +68,21 @@ function Links() {
       >
         {/* Left */}
         <div
-          className="playinit w-full md:w-1/3 md:h-screen h-1/3 bg-[#0F2E24] items-center justify-center relative hover:cursor-pointer"
-          onMouseEnter={() => imageHoverIn(leftImageRef)}
-          onMouseLeave={() => imageHoverOut(leftImageRef)}
-          onTouchStart={() => imageHoverIn(leftImageRef)}
-          onTouchEnd={() => imageHoverOut(leftImageRef)}
-          onClick={() => showPopup("toasty-hosting")}
+          className="playinit md:w-1/3 md:h-screen h-1/3 bg-[#0F2E24] items-center justify-center relative hover:cursor-pointer"
+          onMouseEnter={() => imageHoverIn(rightImageRef)}
+          onMouseLeave={() => imageHoverOut(rightImageRef)}
+          onTouchStart={() => imageHoverIn(rightImageRef)}
+          onTouchEnd={() => imageHoverOut(rightImageRef)}
+          onClick={() => showPopup("hibernation-mode")}
         >
           <div
-            ref={leftImageRef}
-            className="bg-[url('/holidaygift/images/DinnerParty-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            ref={rightImageRef}
+            className="bg-[url('/holidaygift/images/HibernationMode-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center">
-            <h2 className="text-[#DAE8DD]">Toasty hosting</h2>
+          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+            <h2 className="text-[#DAE8DD]">Hibernation mode</h2>
           </div>
         </div>
         {/* Middle */}
@@ -100,38 +100,38 @@ function Links() {
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center">
-            <h2 className="text-[#315B31]">Snow day</h2>
+          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+            <h2 className="text-[#0F2E24]">Snow day</h2>
           </div>
         </div>
         {/* Right */}
         <div
-          className="playinit md:w-1/3 md:h-screen h-1/3 bg-[#0F2E24] items-center justify-center relative hover:cursor-pointer"
-          onMouseEnter={() => imageHoverIn(rightImageRef)}
-          onMouseLeave={() => imageHoverOut(rightImageRef)}
-          onTouchStart={() => imageHoverIn(rightImageRef)}
-          onTouchEnd={() => imageHoverOut(rightImageRef)}
-          onClick={() => showPopup("hibernation-mode")}
+          className="playinit w-full md:w-1/3 md:h-screen h-1/3 bg-[#0F2E24] items-center justify-center relative hover:cursor-pointer"
+          onMouseEnter={() => imageHoverIn(leftImageRef)}
+          onMouseLeave={() => imageHoverOut(leftImageRef)}
+          onTouchStart={() => imageHoverIn(leftImageRef)}
+          onTouchEnd={() => imageHoverOut(leftImageRef)}
+          onClick={() => showPopup("toasty-hosting")}
         >
           <div
-            ref={rightImageRef}
-            className="bg-[url('/holidaygift/images/HibernationMode-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            ref={leftImageRef}
+            className="bg-[url('/holidaygift/images/DinnerParty-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center">
-            <h2 className="text-[#DAE8DD]">Hibernation mode</h2>
+          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+            <h2 className="text-[#DAE8DD]">Toasty hosting</h2>
           </div>
         </div>
         {activePopup === "toasty-hosting" && (
           <Popup
             title="Toasty hosting"
-            sub="When you’re in a contemplative mood"
+            sub="When you have guests and need to set the mood"
             genre="R&B, Indie, etc."
-            content="Whether you’re a regular on the ski hills or you only head out into the cold to shovel the front walk, this collection of songs will keep your spirits high, even when it’s freezing. Hit play on this one, and the songs will follow you from the base of the hill to the top (and back down again), or from the house to the car and back home again. Bundle up, head out, and let this playlist enhance your snowy adventures. Cold? What cold?"
+            content="The colder it gets outside, the more we need human connection inside. Press play on this list while you’re entertaining friends or family, and let its mix of mellow vibes and upbeat rhythms pull the room together. Like all the best party playlists, it’s laidback, lively and effortlessly cool — and it’ll have your friends pulling out their phones to Shazam their new favorite song."
             image="/holidaygift/images/DinnerPartyTile.jpg"
-            linkOne="https://youtube.com/playlist?list=PLIs6Kb_-sdWLYIrSTUMg2yATAngDvzS0u&si=KI9rwnJ9alXGT4Cy"
-            linkTwo="https://open.spotify.com/playlist/47dh5nRqh4MLF9MyaXG4Xw?si=HioXJT6WTXGwlLnZadlDDw"
+            linkOne="https://music.apple.com/us/playlist/toasty-hosting/pl.u-AkAmPlpfxrvzvBY"
+            linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWLYIrSTUMg2yATAngDvzS0u&si=KI9rwnJ9alXGT4Cy"
             linkThree="https://open.spotify.com/playlist/47dh5nRqh4MLF9MyaXG4Xw?si=HioXJT6WTXGwlLnZadlDDw"
             closePopup={closePopup}
           />
@@ -140,13 +140,13 @@ function Links() {
         {activePopup === "snow-day" && (
           <Popup
             title="Snow day"
-            sub="Fun in the snow"
+            sub="When you go outside and like it"
             genre="Pop, Rock, etc."
-            content="Whether you’re a regular on the ski hills or you only head out into the cold to shovel the front walk, this collection of songs will keep your spirits high, even when it’s freezing. Hit play on this one, and the songs will follow you from the base of the hill to the top (and back down again), or from the house to the car and back home again. Bundle up, head out, and let this playlist enhance your snowy adventures. Cold? What cold?"
+            content="Whether you’re a ski-hill regular or only go outside to shovel, this upbeat collection will elevate your spirits and keep you moving. Even when it’s freezing. Hit play, and the songs will follow you from the base of the hill to the top (and back down again — just make sure you keep the volume low), or from the house to the car to the office. Bundle up, head out and let this playlist invigorate you. Cold? What cold?"
             image="/holidaygift/images/SnowDayTile.jpg"
-            linkOne="https://example.com/link1"
-            linkTwo="https://example.com/link2"
-            linkThree="https://example.com/link3"
+            linkOne="https://music.apple.com/us/playlist/snow-day/pl.u-vxy697juWLrNrD7"
+            linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWJkXk-LPGNhww9bB79xec5m&si=PsEhLOqNhNB4dWSp"
+            linkThree="https://open.spotify.com/playlist/01Bu56Q4UHtDQJvzSgxmpa?si=Ami5BofNTyC2zpWx_hByMA"
             closePopup={closePopup}
           />
         )}
@@ -154,13 +154,13 @@ function Links() {
         {activePopup === "hibernation-mode" && (
           <Popup
             title="Hibernation mode"
-            sub="Cozy up and relax"
+            sub="When you’re in a contemplative mood"
             genre="Acoustic, Chill, etc."
-            content="Whether you’re a regular on the ski hills or you only head out into the cold to shovel the front walk, this collection of songs will keep your spirits high, even when it’s freezing. Hit play on this one, and the songs will follow you from the base of the hill to the top (and back down again), or from the house to the car and back home again. Bundle up, head out, and let this playlist enhance your snowy adventures. Cold? What cold?"
+            content="There’s something about the stillness of January and February — it’s easy to get lost in thought. This collection of introspective songs feels like a warm blanket when you’re curled up with a good book, or staring at the bare trees out your window. It’s perfect for these low-key, post-holiday winter months, a mix of tracks that let you unwind, reflect and relax. Grab a cup of tea and chill out."
             image="/holidaygift/images/HibernationModeTile.jpg"
-            linkOne="https://example.com/link1"
-            linkTwo="https://example.com/link2"
-            linkThree="https://example.com/link3"
+            linkOne="https://music.apple.com/us/playlist/hibernation-mode/pl.u-Ymb0vd5IgJv6v4Y"
+            linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWL3bPPJIFH8UH_QSq9hjGJL&si=S9JjWnIewRxkuBXV"
+            linkThree="https://open.spotify.com/playlist/27yGjhrL8U1C2JbqafUraV?si=-SrWnY2NSladxbxnjc99aw"
             closePopup={closePopup}
           />
         )}
