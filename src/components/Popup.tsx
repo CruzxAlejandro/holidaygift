@@ -124,10 +124,10 @@ function Popup({
           >
             <span className="absolute"></span>
             <span className="sr-only">Close</span>
-            {/* <img src="/holidaygift/images/x_2.png" className="max-w-12" /> */}
+            {/* <img src="/images/x_2.png" className="max-w-12" /> */}
             <HoverImage
-              defaultSrc="/holidaygift/images/X_1.png"
-              hoverSrc="/holidaygift/images/x_2.png"
+              defaultSrc="/images/X_1.png"
+              hoverSrc="/images/x_2.png"
               className="max-w-12"
               alt="Close button"
             />
@@ -146,8 +146,8 @@ function Popup({
               <div className="music max-w-16 md:max-w-24">
                 <a href={linkOne} target="_blank">
                   <HoverImage
-                    defaultSrc="/holidaygift/images/apple music_button.png"
-                    hoverSrc="/holidaygift/images/AppleMusic.gif"
+                    defaultSrc="/images/apple music_button.png"
+                    hoverSrc="/images/AppleMusic.gif"
                     className=""
                     alt="Apple music illustration."
                   />
@@ -156,8 +156,8 @@ function Popup({
               <div className="music max-w-16 md:max-w-24">
                 <a href={linkTwo} target="_blank">
                   <HoverImage
-                    defaultSrc="/holidaygift/images/Youtube_button.png"
-                    hoverSrc="/holidaygift/images/Youtube.gif"
+                    defaultSrc="/images/Youtube_button.png"
+                    hoverSrc="/images/Youtube.gif"
                     className=""
                     alt="Youtube illustration."
                   />
@@ -166,8 +166,8 @@ function Popup({
               <div className="music max-w-16 md:max-w-24">
                 <a href={linkThree} target="_blank">
                   <HoverImage
-                    defaultSrc="/holidaygift/images/spotify_button.png"
-                    hoverSrc="/holidaygift/images/Spotify.gif"
+                    defaultSrc="/images/spotify_button.png"
+                    hoverSrc="/images/Spotify.gif"
                     className=""
                     alt="Youtube illustration."
                   />

@@ -77,7 +77,7 @@ function Links() {
         >
           <div
             ref={rightImageRef}
-            className="bg-[url('/holidaygift/images/HibernationMode-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/HibernationMode-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
@@ -96,7 +96,7 @@ function Links() {
         >
           <div
             ref={middleImageRef}
-            className="bg-[url('/holidaygift/images/SnowDay-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/SnowDay-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
@@ -115,7 +115,7 @@ function Links() {
         >
           <div
             ref={leftImageRef}
-            className="bg-[url('/holidaygift/images/DinnerParty-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/DinnerParty-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
@@ -129,7 +129,7 @@ function Links() {
             sub="When you have guests and need to set the mood"
             genre="R&B, Indie, etc."
             content="The colder it gets outside, the more we need human connection inside. Press play on this list while you’re entertaining friends or family, and let its mix of mellow vibes and upbeat rhythms pull the room together. Like all the best party playlists, it’s laidback, lively and effortlessly cool — and it’ll have your friends pulling out their phones to Shazam their new favorite song."
-            image="/holidaygift/images/DinnerPartyTile.jpg"
+            image="/images/DinnerPartyTile.jpg"
             linkOne="https://music.apple.com/us/playlist/toasty-hosting/pl.u-AkAmPlpfxrvzvBY"
             linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWLYIrSTUMg2yATAngDvzS0u&si=KI9rwnJ9alXGT4Cy"
             linkThree="https://open.spotify.com/playlist/47dh5nRqh4MLF9MyaXG4Xw?si=HioXJT6WTXGwlLnZadlDDw"
@@ -143,7 +143,7 @@ function Links() {
             sub="When you go outside and like it"
             genre="Pop, Rock, etc."
             content="Whether you’re a ski-hill regular or only go outside to shovel, this upbeat collection will elevate your spirits and keep you moving. Even when it’s freezing. Hit play, and the songs will follow you from the base of the hill to the top (and back down again — just make sure you keep the volume low), or from the house to the car to the office. Bundle up, head out and let this playlist invigorate you. Cold? What cold?"
-            image="/holidaygift/images/SnowDayTile.jpg"
+            image="/images/SnowDayTile.jpg"
             linkOne="https://music.apple.com/us/playlist/snow-day/pl.u-vxy697juWLrNrD7"
             linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWJkXk-LPGNhww9bB79xec5m&si=PsEhLOqNhNB4dWSp"
             linkThree="https://open.spotify.com/playlist/01Bu56Q4UHtDQJvzSgxmpa?si=Ami5BofNTyC2zpWx_hByMA"
@@ -157,7 +157,7 @@ function Links() {
             sub="When you’re in a contemplative mood"
             genre="Acoustic, Chill, etc."
             content="There’s something about the stillness of January and February — it’s easy to get lost in thought. This collection of introspective songs feels like a warm blanket when you’re curled up with a good book, or staring at the bare trees out your window. It’s perfect for these low-key, post-holiday winter months, a mix of tracks that let you unwind, reflect and relax. Grab a cup of tea and chill out."
-            image="/holidaygift/images/HibernationModeTile.jpg"
+            image="/images/HibernationModeTile.jpg"
             linkOne="https://music.apple.com/us/playlist/hibernation-mode/pl.u-Ymb0vd5IgJv6v4Y"
             linkTwo="https://youtube.com/playlist?list=PLIs6Kb_-sdWL3bPPJIFH8UH_QSq9hjGJL&si=S9JjWnIewRxkuBXV"
             linkThree="https://open.spotify.com/playlist/27yGjhrL8U1C2JbqafUraV?si=-SrWnY2NSladxbxnjc99aw"

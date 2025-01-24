@@ -16,7 +16,7 @@ function RandomImage({ className }: RandomImageProps) {
   ];
 
   function randomImage() {
-    let tempString: string = "/holidaygift/images/tiles/";
+    let tempString: string = "/images/tiles/";
     let type: string = fileName[getRandomInt(0, 2)];
     tempString += type + getRandomInt(1, 16) + ".png";
     return tempString;
