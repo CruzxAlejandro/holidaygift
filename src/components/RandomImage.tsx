@@ -1,3 +1,5 @@
+import HoverImage from "./HoverImage";
+
 interface RandomImageProps {
   className?: string;
 }
@@ -23,11 +25,11 @@ function RandomImage({ className }: RandomImageProps) {
   }
   return (
     <>
-      <img
+      <HoverImage
+        defaultSrc={randomImage()}
+        hoverSrc={randomImage()}
         className={className}
-        loading="lazy"
-        src={randomImage()}
-        alt={randomImage()}
+        alt="Holiday tile illustration."
       />
     </>
   );

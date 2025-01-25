@@ -46,7 +46,7 @@
   }
 
   p {
-    @apply text-base mb-5 text-[#0F2E24];
+    @apply text-base md:text-sm lg:text-base xl:text-lg xxl:text-2xl mb-5 text-[#0F2E24];
     font-family: "Sentinel", serif;
     font-weight: 500;
   }

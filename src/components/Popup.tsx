@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import HoverImage from "./HoverImage";
 
 interface PopProps {
   title: string;
@@ -13,40 +14,6 @@ interface PopProps {
   linkThree: string;
   closePopup: () => void;
 }
-
-interface HoverImageProps {
-  defaultSrc: string;
-  hoverSrc: string;
-  className?: string;
-  alt?: string;
-}
-
-const HoverImage: React.FC<HoverImageProps> = ({
-  defaultSrc,
-  hoverSrc,
-  className,
-  alt,
-}) => {
-  const [imageSrc, setImageSrc] = useState<string>(defaultSrc);
-
-  const handleMouseEnter = () => {
-    setImageSrc(hoverSrc);
-  };
-
-  const handleMouseLeave = () => {
-    setImageSrc(defaultSrc);
-  };
-
-  return (
-    <img
-      src={imageSrc}
-      alt={alt}
-      className={className}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    />
-  );
-};
 
 function Popup({
   title,
@@ -113,7 +80,7 @@ function Popup({
   return (
     <>
       <div
-        className="playlistOpen min-h-screen w-full absolute z-50 p-4 md:p-10 bg-[#F7EFDF]"
+        className="playlistOpen min-h-screen w-full absolute z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
         ref={pop}
       >
         <div className="topbar text-right">
@@ -142,8 +109,11 @@ function Popup({
             <h3 className="text-[#964730]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
             <p className="text-[#000] mt-5">{content}</p>
+            <p className="text-[#000] mb-5">
+              Select your favorite listening mode below.
+            </p>
             <div className="links flex justify-between md:justify-around w-full text-dh-black">
-              <div className="music max-w-16 md:max-w-24">
+              <div className="music max-w-16 md:max-w-24 text-center">
                 <a href={linkOne} target="_blank">
                   <HoverImage
                     defaultSrc="/images/apple music_button.png"
@@ -152,8 +122,9 @@ function Popup({
                     alt="Apple music illustration."
                   />
                 </a>
+                <p className="pt-2">Apple music</p>
               </div>
-              <div className="music max-w-16 md:max-w-24">
+              <div className="music max-w-16 md:max-w-24 text-center">
                 <a href={linkTwo} target="_blank">
                   <HoverImage
                     defaultSrc="/images/Youtube_button.png"
@@ -162,8 +133,9 @@ function Popup({
                     alt="Youtube illustration."
                   />
                 </a>
+                <p className="pt-2">YouTube</p>
               </div>
-              <div className="music max-w-16 md:max-w-24">
+              <div className="music max-w-16 md:max-w-24 text-center">
                 <a href={linkThree} target="_blank">
                   <HoverImage
                     defaultSrc="/images/spotify_button.png"
@@ -172,6 +144,7 @@ function Popup({
                     alt="Youtube illustration."
                   />
                 </a>
+                <p className="pt-2">Spotify</p>
               </div>
             </div>
           </div>

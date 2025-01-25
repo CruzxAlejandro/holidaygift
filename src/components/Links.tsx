@@ -64,6 +64,7 @@ function Links() {
     <>
       <div
         className="playlists flex flex-col md:flex-row h-screen relative"
+        id="playlist"
         ref={container}
       >
         {/* Left */}

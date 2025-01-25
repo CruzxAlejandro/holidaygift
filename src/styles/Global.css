@@ -14,3 +14,10 @@
     height: 100px;
   }
 } */
+.hover-image-container {
+  width: 200px; /* Adjust width */
+  height: 200px; /* Adjust height */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
