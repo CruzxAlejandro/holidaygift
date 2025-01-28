@@ -78,7 +78,7 @@ function Links() {
         >
           <div
             ref={rightImageRef}
-            className="bg-[url('/images/HibernationMode-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/HibernationMode-Center.jpg')] w-full h-3/4 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
@@ -97,7 +97,7 @@ function Links() {
         >
           <div
             ref={middleImageRef}
-            className="bg-[url('/images/SnowDay-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/SnowDay-Center.jpg')] w-full h-3/4 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
@@ -116,7 +116,7 @@ function Links() {
         >
           <div
             ref={leftImageRef}
-            className="bg-[url('/images/DinnerParty-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/DinnerParty-Center.jpg')] w-full h-3/4 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
