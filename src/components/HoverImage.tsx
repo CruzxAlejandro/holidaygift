@@ -28,17 +28,13 @@ function HoverImage({ defaultSrc, hoverSrc, className, alt }: HoverImageProps) {
       <img
         src={defaultSrc}
         alt={alt}
-        className={`absolute transition-opacity duration-700 ease-in-out ${
-          isHovered ? "opacity-0" : "opacity-100"
-        }`}
+        className={`absolute ${isHovered ? "opacity-0" : "opacity-100"}`}
       />
       {/* Hover Image */}
       <img
         src={hoverSrc}
         alt={alt}
-        className={`transition-opacity duration-700 ease-in-out ${
-          isHovered ? "opacity-100" : "opacity-0"
-        }`}
+        className={` ${isHovered ? "opacity-100" : "opacity-0"}`}
       />
     </div>
   );

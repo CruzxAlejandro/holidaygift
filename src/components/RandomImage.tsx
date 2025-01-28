@@ -1,4 +1,5 @@
-import HoverImage from "./HoverImage";
+// import HoverImage from "./HoverImage";
+import FlipImage from "./FlipImage";
 
 interface RandomImageProps {
   className?: string;
@@ -25,7 +26,7 @@ function RandomImage({ className }: RandomImageProps) {
   }
   return (
     <>
-      <HoverImage
+      <FlipImage
         defaultSrc={randomImage()}
         hoverSrc={randomImage()}
         className={className}

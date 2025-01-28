@@ -59,13 +59,10 @@ function Hero() {
               ref={grid}
             >
               {Array.from({ length: 27 }, (_, index) => (
-                <div key={index} className="bg-[#f7efdf]">
+                <div key={index} className="bg-[#f7efdf] w-full h-full">
                   <RandomImage className="object-fill heroSquare" />
                 </div>
               ))}
-              {/* <div className="bg-[#f7efdf] invisible lg:visible">
-                <RandomImage className="object-fill heroSquare" />
-              </div> */}
               <div className="md:col-start-1 md:row-start-2 lg:col-start-1 lg:row-start-2 md:col-span-3 md:row-span-1 lg:col-span-3 lg:row-span-2 my-auto mx-auto heroTitle px-5">
                 <h1 className="text-[#0F2E24]">
                   We made you
@@ -95,14 +92,11 @@ function Hero() {
                     to="playlist"
                     smooth={true}
                     duration={800}
-                    className="text-dh-blue underline hover:cursor-pointer"
+                    className="text-[#025961] underline hover:cursor-pointer"
                   >
                     links
                   </ScrollLink>{" "}
                   and turn up the volume.
-                  {/* <ScrollLink to="playlist" smooth={true} duration={800}>
-                    Playlists
-                  </ScrollLink> */}
                 </p>
               </div>
             </div>
@@ -136,7 +130,18 @@ function Hero() {
                   them as if they were handmade — no wrapping paper or shelf
                   space required.
                 </p>
-                <p>Click the links and turn up the volume.</p>
+                <p>
+                  Click the{" "}
+                  <ScrollLink
+                    to="playlist"
+                    smooth={true}
+                    duration={800}
+                    className="text-[#025961] underline hover:cursor-pointer"
+                  >
+                    links
+                  </ScrollLink>{" "}
+                  and turn up the volume.
+                </p>
               </div>
             </div>
           )}

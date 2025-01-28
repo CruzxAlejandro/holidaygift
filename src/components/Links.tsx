@@ -78,11 +78,11 @@ function Links() {
         >
           <div
             ref={rightImageRef}
-            className="bg-[url('/images/HibernationMode-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/HibernationMode-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+          <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <h2 className="text-[#DAE8DD]">Hibernation mode</h2>
           </div>
         </div>
@@ -97,11 +97,11 @@ function Links() {
         >
           <div
             ref={middleImageRef}
-            className="bg-[url('/images/SnowDay-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/SnowDay-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+          <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <h2 className="text-[#0F2E24]">Snow day</h2>
           </div>
         </div>
@@ -116,11 +116,11 @@ function Links() {
         >
           <div
             ref={leftImageRef}
-            className="bg-[url('/images/DinnerParty-Center.jpg')] w-full h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
+            className="bg-[url('/images/DinnerParty-Center.jpg')] w-full h-5/6 md:h-full bg-cover bg-center bg-no-repeat linkImage absolute z-10"
           >
             &nbsp;
           </div>
-          <div className="absolute bottom-2 left-0 right-0 text-center invisible md:visible">
+          <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <h2 className="text-[#DAE8DD]">Toasty hosting</h2>
           </div>
         </div>

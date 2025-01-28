@@ -106,7 +106,7 @@ function Popup({
           </div>
           <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
             <h2 className="text-[#283C4D]">{title}</h2>
-            <h3 className="text-[#964730]">{sub}</h3>
+            <h3 className="text-[#025961]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
             <p className="text-[#000] mt-5">{content}</p>
             <p className="text-[#000] mb-5">
@@ -122,7 +122,7 @@ function Popup({
                     alt="Apple music illustration."
                   />
                 </a>
-                <p className="pt-2">Apple music</p>
+                <p className="pt-2">Apple Music</p>
               </div>
               <div className="music max-w-16 md:max-w-24 text-center">
                 <a href={linkTwo} target="_blank">
