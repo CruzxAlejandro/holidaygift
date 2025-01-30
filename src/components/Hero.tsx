@@ -80,7 +80,7 @@ function Hero() {
               </div>
               <div className="md:col-start-5 md:row-start-2 lg:col-start-6 lg:row-start-2 md:col-span-5 md:row-span-3 lg:col-span-3 lg:row-span-4 px-5 lg:px-12 my-auto lg:mx-auto heroText">
                 <p>
-                  If this new year has felt tough so far, you're not alone. The
+                  If this new year has felt tough so far, you’re not alone. The
                   team at DH put together some playlists to bring you comfort,
                   warmth and maybe even a little joy.
                 </p>
@@ -128,7 +128,7 @@ function Hero() {
               </div>
               <div className="row-start-4 col-span-6 row-auto px-10 py-5 my-auto mx-auto heroText">
                 <p>
-                  If this new year has felt tough so far, you're not alone. The
+                  If this new year has felt tough so far, you’re not alone. The
                   team at DH put together some playlists to bring you comfort,
                   warmth and maybe even a little joy.
                 </p>

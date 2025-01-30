@@ -31,6 +31,9 @@ function Popup({
 
   useGSAP(
     () => {
+      gsap.set(document.body, {
+        overflow: "hidden",
+      });
       const tl = gsap.timeline({});
       tl.from(pop.current, { x: "-50%" });
       tl.from(".contentImage", {
@@ -51,8 +54,8 @@ function Popup({
         stagger: 0.25,
         ease: "sine.out",
       });
-      tl.from(".btn-close", {
-        scale: 0.75,
+      tl.from(".topbar", {
+        x: "-2%",
         opacity: 0,
         duration: 0.75,
         ease: "sine",
@@ -62,7 +65,12 @@ function Popup({
   );
 
   const handleClose = contextSafe(() => {
-    const tl = gsap.timeline({ onComplete: closePopup });
+    const tl = gsap.timeline({
+      onComplete: closePopup,
+    });
+    gsap.set(document.body, {
+      overflow: "default",
+    });
     tl.to(".contentImage, .contentCopy", {
       x: "-10%",
       opacity: 0,
@@ -83,10 +91,11 @@ function Popup({
         className="playlistOpen min-h-screen w-full fixed top-0 left-0 z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
         ref={pop}
       >
-        <div className="topbar text-right">
+        <div className="topbar flex justify-end items-center text-right">
+          <p className="mb-0">Close</p>
           <button
             type="button"
-            className="relative focus:outline-none focus:ring-2 focus:ring-white btn-close"
+            className="relative focus:outline-none btn-close pl-5"
             onClick={handleClose}
           >
             <span className="absolute"></span>
@@ -95,16 +104,16 @@ function Popup({
             <HoverImage
               defaultSrc="/images/X_1.png"
               hoverSrc="/images/x_2.png"
-              className="max-w-12"
+              className="max-w-8 sm:max-w-12"
               alt="Close button"
             />
           </button>
         </div>
-        <div className="contentWrap flex flex-col sm:flex-row w-full items-center">
-          <div className="contentImage w-3/5 sm:w-1/2 p-4 sm:p-10 text-center">
+        <div className="contentWrap flex flex-col md:flex-row w-full items-center">
+          <div className="contentImage w-3/5 md:w-1/2 p-4 md:p-10 text-center">
             <img src={image} alt="" />
           </div>
-          <div className="contentCopy w-full sm:w-1/2 p-4 sm:p-10">
+          <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
             <h2 className="text-[#283C4D]">{title}</h2>
             <h3 className="text-[#025961]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
