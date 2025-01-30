@@ -84,7 +84,7 @@ function Links() {
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2 md:mb-4">
-              Hibernation mode
+              Hibernation Mode
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ function Links() {
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2 md:mb-4">
-              Snow day
+              Snow Day
             </p>
           </div>
         </div>
@@ -126,7 +126,7 @@ function Links() {
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
             <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2 md:mb-4">
-              Toasty hosting
+              Toasty Hosting
             </p>
           </div>
         </div>
