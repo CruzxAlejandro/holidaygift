@@ -80,7 +80,7 @@ function Popup({
   return (
     <>
       <div
-        className="playlistOpen min-h-screen w-full absolute z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
+        className="playlistOpen min-h-screen w-full fixed top-0 left-0 z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
         ref={pop}
       >
         <div className="topbar text-right">
