@@ -162,7 +162,7 @@ function Links() {
           <Popup
             title="Hibernation Mode"
             sub="When you’re in a contemplative mood."
-            genre="R&B, indie, jazz."
+            genre="Acoustic, folk, lo-fi."
             content="There’s something about the stillness of January and February — it’s easy to get lost in thought. This collection of introspective songs feels like a warm blanket when you’re curled up with a good book, or staring at the bare trees out your window. It’s perfect for these low-key, post-holiday winter months, a mix of tracks that let you unwind, reflect and relax. Grab a cup of tea and chill out."
             image="/images/HibernationModeTile.jpg"
             linkOne="https://music.apple.com/us/playlist/hibernation-mode/pl.u-Ymb0vd5IgJv6v4Y"
