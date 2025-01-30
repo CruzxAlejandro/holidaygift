@@ -132,9 +132,9 @@ function Links() {
         </div>
         {activePopup === "toasty-hosting" && (
           <Popup
-            title="Toasty hosting"
+            title="Toasty Hosting"
             sub="When you have guests and need to set the mood."
-            genre="R&B, Indie, etc."
+            genre="R&B, indie, jazz."
             content="The colder it gets outside, the more we need human connection inside. Press play on this list while you’re entertaining friends or family, and let its mix of mellow vibes and upbeat rhythms pull the room together. Like all the best party playlists, it’s laidback, lively and effortlessly cool — and it’ll have your friends pulling out their phones to Shazam their new favorite song."
             image="/images/DinnerPartyTile.jpg"
             linkOne="https://music.apple.com/us/playlist/toasty-hosting/pl.u-AkAmPlpfxrvzvBY"
@@ -146,9 +146,9 @@ function Links() {
 
         {activePopup === "snow-day" && (
           <Popup
-            title="Snow day"
+            title="Snow Day"
             sub="When you go outside and like it."
-            genre="Pop, Rock, etc."
+            genre="Pop, rock, alternative."
             content="Whether you’re a ski-hill regular or only go outside to shovel, this upbeat collection will elevate your spirits and keep you moving. Even when it’s freezing. Hit play, and the songs will follow you from the base of the hill to the top (and back down again — just make sure you keep the volume low), or from the house to the car to the office. Bundle up, head out and let this playlist invigorate you. Cold? What cold?"
             image="/images/SnowDayTile.jpg"
             linkOne="https://music.apple.com/us/playlist/snow-day/pl.u-vxy697juWLrNrD7"
@@ -160,9 +160,9 @@ function Links() {
 
         {activePopup === "hibernation-mode" && (
           <Popup
-            title="Hibernation mode"
+            title="Hibernation Mode"
             sub="When you’re in a contemplative mood."
-            genre="Acoustic, Chill, etc."
+            genre="R&B, indie, jazz."
             content="There’s something about the stillness of January and February — it’s easy to get lost in thought. This collection of introspective songs feels like a warm blanket when you’re curled up with a good book, or staring at the bare trees out your window. It’s perfect for these low-key, post-holiday winter months, a mix of tracks that let you unwind, reflect and relax. Grab a cup of tea and chill out."
             image="/images/HibernationModeTile.jpg"
             linkOne="https://music.apple.com/us/playlist/hibernation-mode/pl.u-Ymb0vd5IgJv6v4Y"
