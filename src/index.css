@@ -28,7 +28,7 @@
   }
 
   h2 {
-    @apply text-3xl lg:text-4xl mb-2 md:mb-4;
+    @apply text-4xl mb-2 md:mb-4;
     font-family: "Sentinel", serif;
     font-weight: 700;
   }

@@ -83,7 +83,9 @@ function Links() {
             &nbsp;
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
-            <h2 className="text-[#DAE8DD]">Hibernation mode</h2>
+            <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2">
+              Hibernation mode
+            </p>
           </div>
         </div>
         {/* Middle */}
@@ -102,7 +104,9 @@ function Links() {
             &nbsp;
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
-            <h2 className="text-[#DAE8DD]">Snow day</h2>
+            <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2">
+              Snow day
+            </p>
           </div>
         </div>
         {/* Right */}
@@ -121,7 +125,9 @@ function Links() {
             &nbsp;
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
-            <h2 className="text-[#DAE8DD]">Toasty hosting</h2>
+            <p className="text-[#DAE8DD] text-3xl md:text-4xl font-bold mb-2">
+              Toasty hosting
+            </p>
           </div>
         </div>
         {activePopup === "toasty-hosting" && (

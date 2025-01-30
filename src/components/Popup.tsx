@@ -88,7 +88,7 @@ function Popup({
   return (
     <>
       <div
-        className="playlistOpen min-h-screen w-full fixed top-0 left-0 z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
+        className="playlistOpen min-h-screen overflow-y-scroll w-full fixed top-0 bottom-0 left-0 z-50 p-4 md:p-10 xxl:w-11/12 bg-[#F7EFDF]"
         ref={pop}
       >
         <div className="topbar flex justify-end items-center text-right">
@@ -110,7 +110,7 @@ function Popup({
           </button>
         </div>
         <div className="contentWrap flex flex-col md:flex-row w-full items-center">
-          <div className="contentImage w-3/5 md:w-1/2 p-4 md:p-10 text-center">
+          <div className="contentImage w-full md:w-1/2 p-4 md:p-10 text-center">
             <img src={image} alt="" />
           </div>
           <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
