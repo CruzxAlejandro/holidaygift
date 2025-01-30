@@ -58,11 +58,19 @@ function Hero() {
               className="gridWrapper grid md:grid-cols-9 md:grid-rows-5 lg:grid-rows-5"
               ref={grid}
             >
-              {Array.from({ length: 27 }, (_, index) => (
+              {Array.from({ length: 26 }, (_, index) => (
                 <div key={index} className="bg-[#f7efdf] w-full h-full">
                   <RandomImage className="object-fill heroSquare" />
                 </div>
               ))}
+              <div className="bg-[#f7efdf]">
+                <a href="https://wearedh.com" target="_blank">
+                  <img
+                    className="object-fill heroSquare"
+                    src="/images/DH-Tile.png"
+                  />
+                </a>
+              </div>
               <div className="md:col-start-1 md:row-start-2 lg:col-start-1 lg:row-start-2 md:col-span-3 md:row-span-1 lg:col-span-3 lg:row-span-2 my-auto mx-auto heroTitle px-5">
                 <h1 className="text-[#0F2E24]">
                   We made you
@@ -71,20 +79,15 @@ function Hero() {
                 </h1>
               </div>
               <div className="md:col-start-5 md:row-start-2 lg:col-start-6 lg:row-start-2 md:col-span-5 md:row-span-3 lg:col-span-3 lg:row-span-4 px-5 lg:px-12 my-auto lg:mx-auto heroText">
-                <p>It’s the beginning of a new year, which can be tough.</p>
                 <p>
-                  It’s getting colder. It gets dark at 4 p.m. You’re trying to
-                  meet all your resolutions while recovering from the rush of
-                  the holidays.
+                  If this new year has felt tough so far, you're not alone. The
+                  team at DH put together some playlists to bring you comfort,
+                  warmth and maybe even a little joy.
                 </p>
-                <p>We feel it, too.</p>
                 <p>
-                  So we’ve put together some curated playlists that will get you
-                  through the first months of the year, each one specifically
-                  tailored to soundtrack a winter activity or enhance a mood.
-                  These may be digital gifts, but we’ve intentionally crafted
-                  them as if they were handmade — no wrapping paper or shelf
-                  space required.
+                  These may be digital, but they’re also handmade — no shelf
+                  space required. Each of these three lists is tailored to
+                  soundtrack a wintertime activity or enhance a mood.
                 </p>
                 <p>
                   Click the{" "}
@@ -95,18 +98,27 @@ function Hero() {
                     className="text-[#025961] underline hover:cursor-pointer"
                   >
                     links
-                  </ScrollLink>{" "}
-                  and turn up the volume.
+                  </ScrollLink>
+                  , take what helps, skip what doesn’t — and know that we’re
+                  right here with you.
                 </p>
               </div>
             </div>
           ) : (
             <div className="gridWrapper grid grid-cols-6 row-auto" ref={grid}>
-              {Array.from({ length: 24 }, (_, index) => (
+              {Array.from({ length: 23 }, (_, index) => (
                 <div key={index} className="bg-[#f7efdf]">
                   <RandomImage className="object-fill heroSquare" />
                 </div>
               ))}
+              <div className="bg-[#f7efdf]">
+                <a href="https://wearedh.com" target="_blank">
+                  <img
+                    className="object-fill heroSquare"
+                    src="/images/DH-Tile.png"
+                  />
+                </a>
+              </div>
               <div className="row-start-3 col-span-6 row-auto heroTitle px-10 py-5">
                 <h1 className="text-[#0F2E24]">
                   We made you
@@ -115,20 +127,15 @@ function Hero() {
                 </h1>
               </div>
               <div className="row-start-4 col-span-6 row-auto px-10 py-5 my-auto mx-auto heroText">
-                <p>It’s the beginning of a new year, which can be tough.</p>
                 <p>
-                  It’s getting colder. It gets dark at 4 p.m. You’re trying to
-                  meet all your resolutions while recovering from the rush of
-                  the holidays.
+                  If this new year has felt tough so far, you're not alone. The
+                  team at DH put together some playlists to bring you comfort,
+                  warmth and maybe even a little joy.
                 </p>
-                <p>We feel it, too.</p>
                 <p>
-                  So we’ve put together some curated playlists that will get you
-                  through the first months of the year, each one specifically
-                  tailored to soundtrack a winter activity or enhance a mood.
-                  These may be digital gifts, but we’ve intentionally crafted
-                  them as if they were handmade — no wrapping paper or shelf
-                  space required.
+                  These may be digital, but they’re also handmade — no shelf
+                  space required. Each of these three lists is tailored to
+                  soundtrack a wintertime activity or enhance a mood.
                 </p>
                 <p>
                   Click the{" "}
@@ -139,8 +146,9 @@ function Hero() {
                     className="text-[#025961] underline hover:cursor-pointer"
                   >
                     links
-                  </ScrollLink>{" "}
-                  and turn up the volume.
+                  </ScrollLink>
+                  , take what helps, skip what doesn’t — and know that we’re
+                  right here with you.
                 </p>
               </div>
             </div>

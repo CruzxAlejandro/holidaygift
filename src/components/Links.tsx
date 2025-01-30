@@ -88,7 +88,7 @@ function Links() {
         </div>
         {/* Middle */}
         <div
-          className="playinit w-full md:w-1/3 md:h-screen h-1/3 bg-[#F7EFDF] items-center justify-center relative hover:cursor-pointer"
+          className="playinit w-full md:w-1/3 md:h-screen h-1/3 bg-[#0F2E24] items-center justify-center relative hover:cursor-pointer"
           onMouseEnter={() => imageHoverIn(middleImageRef)}
           onMouseLeave={() => imageHoverOut(middleImageRef)}
           onTouchStart={() => imageHoverIn(middleImageRef)}
@@ -102,7 +102,7 @@ function Links() {
             &nbsp;
           </div>
           <div className="absolute bottom-2 left-0 right-0 text-center z-50 md:z-0">
-            <h2 className="text-[#0F2E24]">Snow day</h2>
+            <h2 className="text-[#DAE8DD]">Snow day</h2>
           </div>
         </div>
         {/* Right */}

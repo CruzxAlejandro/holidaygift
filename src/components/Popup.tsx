@@ -100,11 +100,11 @@ function Popup({
             />
           </button>
         </div>
-        <div className="contentWrap flex flex-col md:flex-row w-full items-center">
-          <div className="contentImage w-3/5 md:w-1/2 p-4 md:p-10 text-center">
+        <div className="contentWrap flex flex-col sm:flex-row w-full items-center">
+          <div className="contentImage w-3/5 sm:w-1/2 p-4 sm:p-10 text-center">
             <img src={image} alt="" />
           </div>
-          <div className="contentCopy w-full md:w-1/2 p-4 md:p-10">
+          <div className="contentCopy w-full sm:w-1/2 p-4 sm:p-10">
             <h2 className="text-[#283C4D]">{title}</h2>
             <h3 className="text-[#025961]">{sub}</h3>
             <h4 className="text-[#527F65]">{genre}</h4>
@@ -112,8 +112,8 @@ function Popup({
             <p className="text-[#000] mb-5">
               Select your favorite listening mode below.
             </p>
-            <div className="links flex justify-between md:justify-around w-full text-dh-black">
-              <div className="music max-w-16 md:max-w-24 text-center">
+            <div className="links flex justify-between sm:justify-around w-full text-dh-black">
+              <div className="music max-w-16 sm:max-w-24 text-center">
                 <a href={linkOne} target="_blank">
                   <HoverImage
                     defaultSrc="/images/apple music_button.png"
@@ -122,9 +122,9 @@ function Popup({
                     alt="Apple music illustration."
                   />
                 </a>
-                <p className="pt-2">Apple Music</p>
+                <p className="pt-2 text-[#025961] text-base">Apple Music</p>
               </div>
-              <div className="music max-w-16 md:max-w-24 text-center">
+              <div className="music max-w-16 sm:max-w-24 text-center">
                 <a href={linkTwo} target="_blank">
                   <HoverImage
                     defaultSrc="/images/Youtube_button.png"
@@ -133,9 +133,9 @@ function Popup({
                     alt="Youtube illustration."
                   />
                 </a>
-                <p className="pt-2">YouTube</p>
+                <p className="pt-2 text-[#025961] text-base">YouTube</p>
               </div>
-              <div className="music max-w-16 md:max-w-24 text-center">
+              <div className="music max-w-16 sm:max-w-24 text-center">
                 <a href={linkThree} target="_blank">
                   <HoverImage
                     defaultSrc="/images/spotify_button.png"
@@ -144,7 +144,7 @@ function Popup({
                     alt="Youtube illustration."
                   />
                 </a>
-                <p className="pt-2">Spotify</p>
+                <p className="pt-2 text-[#025961] text-base">Spotify</p>
               </div>
             </div>
           </div>
